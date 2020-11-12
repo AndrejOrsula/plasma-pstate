@@ -4,6 +4,7 @@ import QtQuick.Layouts 1.1
 
 Item {
     property alias cfg_useDefaultIcon: useDefaultIconCheckbox.checked
+    property alias cfg_showCoreCount: showCoreCountCheckbox.checked
     property alias cfg_showIntelGPU: showIntelGPUCheckbox.checked
     property string cfg_customIcon: plasmoid.configuration.customIcon
     property alias cfg_useSudoForReading: useSudoForReadingCheckbox.checked
@@ -30,6 +31,12 @@ Item {
                 useDefaultIconCheckbox.checked = true
             }
             enabled: !useDefaultIconCheckbox.checked
+        }
+
+        CheckBox {
+            id: showCoreCountCheckbox
+            text: i18n('Show core count')
+            Layout.columnSpan: 2
         }
 
         CheckBox {
