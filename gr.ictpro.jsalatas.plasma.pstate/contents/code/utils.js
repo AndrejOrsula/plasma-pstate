@@ -154,7 +154,6 @@ var model = [
         'items': [
             {
                 'type': 'radio', 'text': '', 'sensor': 'energy_perf', 'items': [
-                    { 'symbol': 'i', 'text': 'Default', 'sensor_value': 'default' },
                     { 'symbol': 'a', 'text': 'Performance', 'sensor_value': 'performance' },
                     { 'symbol': 'k', 'text': 'Balance Performance', 'sensor_value': 'balance_performance' },
                     { 'symbol': 'l', 'text': 'Balance Power', 'sensor_value': 'balance_power' },
